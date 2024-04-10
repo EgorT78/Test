@@ -1,0 +1,884 @@
+.rocketvpn {
+  width: 100%;
+  height: 67.5rem;
+  background-color: #08101f;
+  color: #f5f5f7;
+  position: relative;
+  overflow: hidden;
+}
+
+.rocketvpn__content {
+  max-width: 86.25rem;
+  margin: 0rem auto;
+  padding: 0 2.1875rem;
+}
+
+.rocketvpn-header {
+  font-family: "Graphik LCG";
+  font-size: 1.25rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  height: 7.625rem;
+}
+
+.rocketvpn-header__nav_container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 24.0625rem;
+  justify-content: space-between;
+  font-size: 1.125rem;
+}
+
+.rocketvpn-header__nav_ref {
+  position: relative;
+  color: #f5f5f7;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.rocketvpn-header__nav_ref div:after {
+  position: absolute;
+  display: block;
+  height: 0.125rem;
+  width: 0rem;
+  right: 0;
+  content: "";
+  background-color: #f5f5f7;
+  transition: 350ms;
+}
+
+.rocketvpn-header__nav_ref div:hover:after {
+  left: 0;
+  width: 100%;
+  transition: 350ms;
+}
+
+.rocketvpn-header__login {
+  margin-left: 3.4375rem;
+}
+
+.rocketvpn-header__login img {
+  width: 2.625rem;
+  height: 2.625rem;
+}
+.rocketvpn-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 11.5625rem;
+  cursor: pointer;
+  margin-left: 0.3125rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #f5f5f7;
+}
+
+.rocketvpn-header__logo_img {
+  width: 2.9375rem;
+  height: 2.625rem;
+}
+
+.rocketvpn-offer {
+  font-family: "Graphik LCG";
+  font-weight: 600;
+  font-size: 4rem;
+  max-width: 53.625rem;
+  margin-top: 10.3125rem;
+  position: relative;
+  z-index: 10;
+}
+.rocketvpn-offer h1 {
+  margin: 1.25rem 0rem;
+  line-height: 5rem;
+}
+
+.rocketvpn-offer__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 40.1875rem;
+  margin-top: 3.4375rem;
+}
+
+.rocketvpn-offer__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4375rem;
+  color: #f5f5f7;
+  font-size: 1.125rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.rocketvpn-offer__btn:hover {
+  box-shadow: 0rem 0rem 0.25rem 0.1875rem rgba(235, 235, 235, 0.5);
+  transition: 300ms;
+}
+
+.rocketvpn-offer__btn.buy {
+  border: 0.125rem solid #f88308;
+  background-color: #f88308;
+  width: 18.375rem;
+  height: 4.5rem;
+}
+.rocketvpn-offer__btn.try {
+  border: 0.125rem solid #f88308;
+  background-color: rgba(255, 255, 255, 0);
+  width: 19.3125rem;
+  height: 4.5rem;
+}
+
+.rocketvpn-plt-btns {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.rocketvpn-plt-btns img {
+  float: right;
+}
+
+.rocketvpn-plt-btns a {
+  display: flex;
+  margin-top: 7.5rem;
+}
+
+.rocketvpn-plt__btn_upstr {
+  font-size: 0.75rem;
+  margin-bottom: 0.3125rem;
+  font-weight: normal;
+}
+
+.rocketvpn-plt__btn:hover {
+  box-shadow: 0.125rem 0.25rem 0.25rem 0rem rgba(159, 160, 159, 0.5);
+  translate: -0.125rem -0.3125rem;
+  transition: 300ms;
+}
+
+.rocketvpn-plt__btn,
+.rocketvpn-plt__btn:hover:active {
+  display: flex;
+  justify-content: center;
+  background-color: #151c2a;
+  align-items: center;
+  border-radius: 0.4375rem;
+  color: #f5f5f7;
+  font-size: 1.125rem;
+  cursor: pointer;
+  text-decoration: none;
+  height: 3.625rem;
+  box-shadow: none;
+  translate: none;
+  transition: 300ms;
+}
+
+.rocketvpn-plt__btn.aps {
+  width: 10.25rem;
+}
+.rocketvpn-plt__btn.goo {
+  width: 11.5625rem;
+}
+.rocketvpn-plt__btn.mac {
+  width: 9.375rem;
+}
+.rocketvpn-plt__btn.win {
+  width: 10.25rem;
+}
+.rocketvpn-plt__btn.lin {
+  width: 9.75rem;
+}
+.rocketvpn-plt__btn img {
+  margin-right: 0.625rem;
+}
+
+.rocketvpn-plt__btn.aps > img {
+  width: 1.625rem;
+  height: 2rem;
+}
+.rocketvpn-plt__btn.goo > img {
+  width: 1.8125rem;
+  height: 2rem;
+}
+.rocketvpn-plt__btn.mac > img {
+  width: 2rem;
+  height: 2rem;
+}
+.rocketvpn-plt__btn.win > img {
+  width: 2rem;
+  height: 2rem;
+}
+.rocketvpn-plt__btn.lin > img {
+  width: 1.6875rem;
+  height: 2rem;
+}
+.rocketvpn-plt__btn img {
+  margin-right: 0.625rem;
+}
+
+#sign_img {
+  position: absolute;
+  width: 67.6875rem;
+  height: 59.6875rem;
+  left: -36.1875rem;
+  top: 23.3125rem;
+  z-index: 0;
+}
+.phone_img {
+  position: absolute;
+  display: block;
+  width: 62.625rem;
+  height: 72.1875rem;
+  right: -11.8125rem;
+  top: 12.1875rem;
+  z-index: 0;
+}
+
+.advantages {
+  margin: 10.6875rem auto 0 auto;
+  max-width: 86.125rem;
+}
+
+.advantages__head-txt {
+  font-family: "Graphik LCG";
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.advantages__font {
+  font-family: "Graphik LCG";
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.unlim-devs {
+  position: relative;
+  margin-top: 3.6875rem;
+  width: 86.125rem;
+  height: 32.5rem;
+  background: linear-gradient(to right, #f5f5f7 0%, #f5f5f7 50%, #ffffff 50%);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.unlim-devs img {
+  position: absolute;
+  width: 43.0625rem;
+  top: 0rem;
+  right: 0rem;
+}
+
+.unlim-devs__txt {
+  margin-left: 5rem;
+  margin-top: 10.8125rem;
+}
+
+.seq-warranty {
+  margin-top: 2.375rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seq-warranty__left-cont {
+  position: relative;
+  width: 41.875rem;
+  height: 67.375rem;
+  background-color: #f5f5f7;
+  border-radius: 1.25rem;
+}
+
+.seq-warranty__left-cont img {
+  position: absolute;
+  left: 0rem;
+  bottom: 0rem;
+  width: 100%;
+}
+
+.seq-warranty__right-cont {
+  width: 41.875rem;
+  height: 67.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.seq-warranty__right-cont_block {
+  width: 41.875rem;
+  height: 32.5rem;
+  background-color: #f5f5f7;
+  border-radius: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.seq-warranty__right-cont_block_card {
+  position: absolute;
+  width: 22.25rem;
+  height: 16.0625rem;
+  top: 24.5rem;
+  left: 18.125rem;
+  transform: rotate(-18.45deg);
+}
+.seq-warranty__right-cont_block_man {
+  position: absolute;
+  width: 16.9375rem;
+  height: 15.875rem;
+  top: 19rem;
+  left: 23.5rem;
+}
+
+.seq-warranty__left-cont__txt {
+  width: 31.875rem;
+  margin: 10.8125rem auto 0rem auto;
+}
+
+.seq-warranty__right-cont__txt {
+  width: 31.875rem;
+  margin: 10.8125rem auto 0rem auto;
+}
+
+.faq {
+  max-width: 85.375rem;
+  margin: 7.8125rem auto;
+  position: relative;
+}
+
+.faq__rect {
+  position: absolute;
+  left: 0.25rem;
+  top: 0;
+  border-radius: 0.125rem;
+  width: 7.3125rem;
+  height: 0.5rem;
+  background-color: #ff9900;
+}
+
+.faq__list {
+  list-style: none;
+}
+
+.faq__header {
+  position: relative;
+  font-size: 2.25rem;
+  padding-top: 1.8125rem;
+  margin-bottom: 5rem;
+}
+
+.faq__question {
+  margin-bottom: 0.125rem;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.faq__question__header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #f2f2f2;
+  border-radius: 0.1875rem;
+  display: flex;
+  grid-template-columns: 3.75rem 1fr 5rem;
+  grid-template-rows: 1fr;
+  align-items: center;
+  font-size: 1.125rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 10;
+}
+
+.faq__question__header_q-mark {
+  margin: auto;
+  text-align: center;
+  width: 3.75rem;
+  height: 1.5rem;
+  z-index: 10;
+}
+
+.faq__question__header_q-mark > img {
+  width: 1.625rem;
+  height: 1.5rem;
+}
+.faq__question__header_arrow > img {
+  width: 1.1875rem;
+  height: 1.0625rem;
+}
+
+.faq__question__header_txt {
+  width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 10;
+}
+
+.faq__question__header_arrow {
+  margin: auto;
+  text-align: center;
+  width: 5.3125rem;
+  height: 1.0625rem;
+  z-index: 10;
+}
+
+.faq__question__header img {
+  transform: rotate(0deg);
+  transition: 500ms linear;
+}
+
+.faq-check:checked ~ .faq__question__header .faq__arrow-img {
+  transform: rotate(180deg);
+  transition: 500ms linear;
+}
+
+.faq__question__txt {
+  margin-top: 0rem;
+  padding: 1.75rem 7.1875rem 1.75rem 3.75rem;
+  border-radius: 0.1875rem;
+  background-color: #f3f5ff;
+  line-height: 1.5rem;
+  height: 0.0625rem;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 400ms;
+}
+
+.faq-check:checked ~ .faq__question__txt {
+  margin-top: 0.125rem;
+  padding: 1.75rem 7.1875rem 1.75rem 3.75rem;
+  height: 9.375rem;
+  transition: 400ms;
+}
+
+.shop__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 81.25rem;
+  margin: 8.125rem auto 0 auto;
+}
+
+.shop__groups-list {
+  list-style: none;
+  padding-top: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 20.3125rem;
+}
+
+.shop__groups_btn {
+  display: block;
+  align-content: center;
+  width: 15.3125rem;
+  height: 3.4375rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.9375rem 0.9375rem 2.375rem 0rem rgba(230, 230, 230, 0.9),
+    0.9375rem -0.9375rem 1.875rem 0rem rgba(230, 230, 230, 0.2),
+    -0.9375rem 0.9375rem 1.875rem 0rem rgba(230, 230, 230, 0.2);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 300ms, box-shadow 300ms;
+  padding-left: 1.75rem;
+}
+
+.shop__radio ~ .shop__groups_btn:hover {
+  border-radius: 0.5rem;
+  box-shadow: 0.9375rem 0.9375rem 2.375rem 0rem rgba(230, 230, 230, 0.9),
+    0.9375rem -0.9375rem 1.875rem 0rem rgba(238, 228, 228, 0.2),
+    -0.9375rem 0.9375rem 1.875rem 0rem rgba(238, 228, 228, 0.2);
+  background-color: rgb(173, 245, 185);
+  transition: background-color 300ms, box-shadow 300ms;
+}
+
+.shop__radio:checked ~ .shop__groups_btn,
+.shop__radio:checked ~ .shop__groups_btn:hover {
+  border-radius: 0.5rem;
+  box-shadow: 0.9375rem 0.9375rem 2.375rem 0rem rgba(230, 230, 230, 0.9),
+    0.9375rem -0.9375rem 1.875rem 0rem rgba(230, 230, 230, 0.2),
+    -0.9375rem 0.9375rem 1.875rem 0rem rgba(230, 230, 230, 0.2);
+  background-color: rgb(85, 188, 102);
+  transition: background-color 300ms, box-shadow 300ms;
+}
+
+.shop__main-block {
+  max-width: 61.25rem;
+}
+
+.shop__cards-list {
+  list-style: none;
+}
+
+.shop__descript span {
+  font-size: 0.875rem;
+}
+
+.shop__buttons {
+  display: flex;
+  width: 34.375rem;
+  margin-top: 1.75rem;
+  justify-content: space-between;
+}
+
+.shop__buttons div {
+  width: 16.5625rem;
+  height: 3.25rem;
+  border-radius: 0.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.0625rem;
+  cursor: pointer;
+}
+
+.shop__buttons :first-child {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 0.1875rem solid #e2e2e2;
+  color: #55bc66;
+}
+
+.shop__buttons :last-child {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: #55bc66;
+  color: #ffffff;
+}
+
+.shop__cards-list {
+  --card-width: 19.3125rem;
+  --card-height: 25.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--card-width));
+  /* grid-template-rows: 1fr; */
+  grid-column-gap: 1.5625rem;
+  grid-row-gap: 1.5625rem;
+  margin-top: 2.5rem;
+}
+
+.shop__card {
+  position: relative;
+  width: var(--card-width);
+  height: var(--card-height);
+  border-radius: 0.3125rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 0.0625rem solid rgba(230, 230, 230, 0.9);
+  padding: 1.5rem 1.875rem;
+}
+
+/* Если в каритнку будет добавляться onclick */
+.shop__card > img:first-child,
+/* Если картинка будет открываться как ссылка */
+.shop__card > a:first-child img {
+  display: block;
+  margin: 0rem auto;
+  width: 11.75rem;
+  height: 9.9375rem;
+}
+
+.shop__card > h1 {
+  margin: 1.75rem 0rem 1.0625rem 0rem;
+  font-size: 1.0625rem;
+}
+
+.shop__characteristics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop__characteristics > div {
+  font-size: 0.8125rem;
+  color: rgba(32, 32, 32, 0.6);
+  margin-top: 0.3125rem;
+}
+
+.shop__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+
+.shop__price :first-child {
+  font-size: 1.125rem;
+}
+
+.shop__price__add-to-cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #55bc66;
+  border-radius: 0.25rem;
+  width: 8.5rem;
+  height: 2.0625rem;
+  color: #ffffff;
+  font-size: 0.625rem;
+  cursor: pointer;
+}
+
+.shop__price__cart-mark {
+  position: absolute;
+  display: block;
+  top: -0.3rem;
+  left: -0.6rem;
+  width: 1.25rem;
+  height: 1.1875rem;
+  visibility: hidden;
+}
+
+.shop__price__add-to-cart.in-cart .shop__price__cart-mark {
+  visibility: visible;
+}
+
+.shop__individual-order {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  bottom: 1.625rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 15rem;
+  height: 2.375rem;
+  background-color: #efefef;
+  border-radius: 0.3125rem;
+  color: #0c0c0c;
+  font-size: 0.625rem;
+}
+
+.feedbacks {
+  position: relative;
+  max-width: 86.25rem;
+  height: 49.5rem;
+  margin: 2.1875rem auto 0rem auto;
+  background-image: url("../media/Reviews.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feedbacks__header {
+  font-family: "PragmaticaMedium";
+  font-size: 4rem;
+  height: 10.625rem;
+  padding-left: 3.125rem;
+  padding-top: 11.25rem;
+}
+
+.feedbacks__header div:first-child {
+  margin: 0rem auto;
+}
+
+.feedbacks__main-block {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3.125rem;
+}
+
+.feedbacks__badge {
+  display: flex;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../media/Ellipse.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 22.8125rem;
+  height: 21.4375rem;
+  position: relative;
+}
+
+.feedbacks__badge > img {
+  position: absolute;
+  translate: 100% -40%;
+  width: 12.125rem;
+  height: 11.375rem;
+}
+
+.feedbacks__feedback {
+  width: 38.75rem;
+  font-size: 1.25rem;
+  line-height: 160%;
+  margin-right: 3.125rem;
+  padding-top: 1.25rem;
+}
+
+.feedbacks__feedback h1 {
+  font-size: 1.5rem;
+  line-height: 160%;
+}
+
+.feedbacks__badge_txt {
+  color: #ffffff;
+  font-family: "PragmaticaMedium";
+  font-size: 1.875rem;
+}
+
+.feedbacks__badge_txt > span {
+  font-family: "Graphik LCG";
+  font-weight: 900;
+  font-size: 6.25rem;
+}
+
+.feedbacks__feedback__footer {
+  margin-top: 5.625rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedbacks__feedback__date {
+  display: flex;
+}
+
+.feedbacks__feedback__date_txt {
+  margin-left: 0.5625rem;
+  color: #a1a1a1;
+  font-size: 1.25rem;
+}
+
+.feedbacks__feedback__look-prj-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.25rem;
+  width: 14.375rem;
+}
+
+.select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* fonts */
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter-semi-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.montserrat-normal {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-extrabold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Semibold.eot");
+  src: local("Graphik LCG Semibold"), local("GraphikLCG-Semibold"),
+    url("../fonts/GraphikLCG-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GraphikLCG-Semibold.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Semibold.woff") format("woff"),
+    url("../fonts/GraphikLCG-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Regular.eot");
+  src: local("Graphik LCG Regular"), local("GraphikLCG-Regular"),
+    url("../fonts/GraphikLCG-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GraphikLCG-Regular.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Regular.woff") format("woff"),
+    url("../fonts/GraphikLCG-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Medium.eot");
+  src: local("Graphik LCG Medium"), local("GraphikLCG-Medium"),
+    url("../fonts/GraphikLCG-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GraphikLCG-Medium.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Medium.woff") format("woff"),
+    url("../fonts/GraphikLCG-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pragmatica";
+  src: local("Pragmatica Extended Medium Obliqu"),
+    local("Pragmatica-Extended-Medium-Obliqu"),
+    url("../fonts/PragmaticaExtended-MediumObliqu.woff2") format("woff2"),
+    url("../fonts/PragmaticaExtended-MediumObliqu.woff") format("woff"),
+    url("../fonts/PragmaticaExtended-MediumObliqu.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PragmaticaMedium";
+  src: local("Pragmatica Medium"), local("Pragmatica-Medium"),
+    url("../fonts/Pragmatica-Medium.woff2") format("woff2"),
+    url("../fonts/Pragmatica-Medium.woff") format("woff"),
+    url("../fonts/Pragmatica-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}

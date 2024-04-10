@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pragmatica';
+    src: local('Pragmatica Extended Medium Obliqu'), local('Pragmatica-Extended-Medium-Obliqu'),
+        url('PragmaticaExtended-MediumObliqu.woff2') format('woff2'),
+        url('PragmaticaExtended-MediumObliqu.woff') format('woff'),
+        url('PragmaticaExtended-MediumObliqu.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
